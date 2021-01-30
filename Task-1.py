@@ -10,34 +10,37 @@ print('c =',c)
 
 x = 7 + 9j
 y = 10
+print('x before swap is ',x)
+print('y before swap is',y)
 z = x
 x = y
 y = z
-print('x =',x)
-print('y =', y)
+print('x after swap =',x)
+print('y after swap=', y)
 
 # Swap two numbers using a third variable and do the same task without using any third variable.
 
 x, y = 21, 12
-print('x = {0} , y = {1}'.format(x, y) )
+print('Before swap x  = {0} , y = {1}'.format(x, y) )
 # with third variable
 z = x
 x = y
 y = z
-print ('x = {0} , y = {1}'.format(x, y))
+print ('After swap using third variable x = {0} , y = {1}'.format(x, y))
 
 # without 3rd variable
 x, y = 21, 12
+print('Before swap x  = {0} , y = {1}'.format(x, y)
 x = x + y
 y = x - y
 x = x - y
 #x,y = y,x
-print('x = {0} , y = {1}'.format(x, y))
+print('After swap without third variable x = {0} , y = {1}'.format(x, y))
 
 # Write a program that takes input from the user and prints it using both Python 2.x and Python 3.x
 # Version.
 x = raw_input(' Enter the value : ')
-y = raw_input ('Enter the values ')
+y = input ('Enter the values ')
 print (y)
 # in version 2.x ==> print x
 
@@ -74,5 +77,8 @@ USERNAME01 = 'UPPERCASE'
 an = 10
 an = 'abc'
 print(an)
+
+# Yes, because python variable  is used for storing the value. We can retrieve same value many times. 
+ # If we assigned new value to the same variable then it erases the old value form that variable.
 
 
