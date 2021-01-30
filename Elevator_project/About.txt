@@ -1,0 +1,4 @@
+You Think You Can Program An Elevator
+Many of us ride elevators every day. I feel like I understand how they work, how they decide where to go. If you were asked to put it into words, you might say that an elevator goes wherever it's told, and in doing so goes as far in one direction as it can before turning around. Sounds simple, right? Can you put it into code?
+
+In this challenge, I am asked to implement the logic for a simplified elevator model in Python. I'll ignore a lot of what goes into a real world elevator, like physics, maintenance overrides, and optimizations for traffic patterns. All I asked to do is to decide whether the elevator should go up or go down.

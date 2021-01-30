@@ -1,0 +1,23 @@
+Yield 
+    yield is a keyword in Python that is used to return from a function without destroying the states of its local variable and 
+    when the function is called,the execution starts from the last yield statement.
+     Any function that contains a yield keyword is termed as generator. Hence, yield is what makes a generator. 
+     yield keyword in Python is less known off but has a greater utility which one can think of.
+
+Next 
+   The next() is the utility function for printing the components of the container of iter type.
+
+    Its usage is when the size of the container is not known, or we need to give a prompt when the list/iterator has exhausted.
+
+    The method next() is used when the file is used as the iterator, typically in the loop, the next() method is called repeatedly. 
+    This method returns a next input line or raises StopIteration when the EOF is hit.
+
+Generator:
+    There is a lot of work in building an iterator in Python. 
+    We have to implement a class with __iter__() and __next__() method, keep track of internal states, and raise StopIteration when there are no values to be returned.
+
+    This is both lengthy and counterintuitive. Generator comes to the rescue in such situations.
+
+    ython generators are a simple way of creating iterators. All the work we mentioned above are automatically handled by generators in Python.
+
+    Simply speaking, a generator is a function that returns an object (iterator) which we can iterate over (one value at a time).

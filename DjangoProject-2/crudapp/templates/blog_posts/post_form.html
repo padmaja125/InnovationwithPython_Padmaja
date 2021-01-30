@@ -1,0 +1,6 @@
+<h1> Table edit</h1>
+<form method = 'POST'>
+	{% csrf_token %}
+	{{ table_f.as_p}}
+	<input type = 'submit' value="submit" />
+</form>

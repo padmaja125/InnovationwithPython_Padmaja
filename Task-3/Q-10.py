@@ -1,0 +1,5 @@
+a = input("give some values with comma separeted : ")
+list = a.split(",")
+tup = tuple(list)
+print('list :', list)
+print('tuple :', tup)
