@@ -6,4 +6,4 @@ def rev_str(my_str):
 
 # For loop to reverse the string
 for char in rev_str("Consultadd Training"):
-    print(char)
+    print(" ",join(char))
