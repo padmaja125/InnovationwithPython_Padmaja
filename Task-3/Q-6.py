@@ -2,9 +2,12 @@ l=[]
 for i in range (1,31):
     square = i ** 2
     l.append(square)
-print(l[:5])
-print(l[-5:])
+x = l[:5]
+y =l[-5:]
+z = x + y 
+print(z)
 
+# Method-2
 
 list2 = []
 for i in range(1,31):

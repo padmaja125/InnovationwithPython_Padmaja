@@ -20,34 +20,46 @@ else:
 # If User Enter 3 - Division
 # If User Enter 4 - Multiplication
 # If User Enter 5 - Average
+#Ask user to enter two numbers and keep those numbers in variables num1 and num2
+#respectively for the first 4 options mentioned above.
+#Ask the user to enter two more numbers as first and second for calculating the average as
+#soon as the user chooses an option 5.
+#At the end if the answer of any operation is Negative print a statement saying “NEGATIVE”
+#NOTE: At a time a user can only perform one action.
 
-x = int(input(" Enter the 1st value : "))
-y = int(input("Enter the 2nd value : "))
+
 select = int(input("Enter the number from (1-5): "))
-if select <=5 and select >= 0:
-    if select == 1:
-        print("Addition")
-        z = x + y
-        print(x, "+", y ,"gives", z)
-        
-    elif select == 2:
-        print("Subtraction")
-        z = x - y
-        print(x, "-", y ,"gives", z)
-    elif select == 3:
-        print("Division")
-        z = x / y
-        print(x, "/", y ,"gives", z)    
-    elif select == 4:
-        print("Multiplication")
-        z = x * y
-        print(x, "*", y ,"gives", z)
-    else :
-        print("Average")
-        z = (x + y)/ 2
-        print(x, y ,"makes a average of ", z)
-else:
-    print("you entered wrong option")
+if select in range(1,5):
+    x = int(input(" Enter the 1st value : "))
+    y = int(input("Enter the 2nd value : "))
+    if select <=5 and select >= 0:
+        if select == 1:
+            print("Addition")
+            z = x + y
+        elif select == 2:
+            print("Subtraction")
+            z = x - y
+        elif select == 3:
+            print("Division")
+            z = x / y           
+        elif select == 4:
+            print("Multiplication")
+            z = x * y
+        else :
+            print("Average")
+            a = int(input("Enter two more number for average separated by (,) :")
+            list = a.split(,)
+            list1 = list.append(x,y)
+            sum = 0
+            for i in list:
+                sum += i
+            z = sum / (len(list1) 
+    else:
+        print("you entered wrong option")
+    if z < 0:
+        print('Negative')
+    else:
+        print("Result :", z)
     
 # Write a program in Python to implement the given flowchart
 a, b, c = 10, 20, 30
@@ -117,14 +129,15 @@ while True:
     count += 1
     if count >= 5:
         Break
-print("NameError: name 'Break' is not defined")
+# Output: "NameError: name 'Break' is not defined"
+# Reason : B in the break is capital
 
 # Write a program that prints all the numbers from 0 to 6 except 3 and 6.
 # Expected output: 0 1 2 4 5
 for x in range (0,7):
     if x == 3 or x == 6:
         continue
-    print(x)
+    print(x, end = " ")
 
 # Write a program that accepts a string as an input from the user and calculate the number of digits
 # and letters.
@@ -153,7 +166,29 @@ while x:
             x = 1
     else:
         x = 0
+# For 10 
+counter = 5
+lucky_number = 10
 
+while counter > 0:
+    a = int(input("Guess the lucky number: "))
+    if a == lucky_number:
+        print("Good guess!")
+        break
+
+    elif counter == 1:
+        print("Game over!")
+        break
+
+    else:
+        print("Try again!")
+    counter -= 1                    
+                       
+                       
+                       
+ # For  11                      
+                       
+                       
 x = 1
 while x :
     guess = input('Do you want to enter the game(Y/N) : ')
