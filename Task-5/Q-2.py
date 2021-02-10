@@ -17,3 +17,10 @@ try:
         break
 except:
     print('Please enter the name again.')
+
+import sys
+print("First value", sys.argv[0])
+print("All values")
+for i, x  in enumerate(sys.argv):
+    print(i, x)
+    
